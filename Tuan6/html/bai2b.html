@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2b</title>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bai2b.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        #container{
+            width: 400px;
+            height: 300px;
+            border: 1px dotted red;
+        }
+        #cong, #tru, #chia, #chiadu{
+            border: 1px solid rgb(0, 0, 0);
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px 10px 5px 10px;
+            margin-right: 50px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <center>
+            <h1>PHÉP TÍNH CƠ BẢN</h1>
+        </center>
+        <table>
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td>Nhập số thứ 1 <font style="color: red;">(*)</font</td>
+                    <td>
+                        <input type="text" id="number1" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nhập số thứ 2 <font style="color: red;">(*)</font</td>
+                    <td>
+                        <input type="text" id="number2" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="cong" onclick="maytinh('add')">+</button>
+                        <button id="tru" onclick="maytinh('tru')">-</button>
+                        <button id="chia" onclick="maytinh('chia')">/</button>
+                        <button id="chiadu" onclick="maytinh('chiadu')">%</button>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>Kết Quả</td>
+                    <td>
+                        <input type="text" id="ketqua" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3 id="aq"></h3>
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

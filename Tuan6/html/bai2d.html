@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2d</title>
+    <script src="../js/bai2d.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        #container{
+            width: 400px;
+            height: 300px;
+            border: 1px dotted red;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <thead></thead>
+            <tbody>
+               <center> <label for="">FORM ĐỊNH DẠNG</label></center>
+                <tr>
+                    <td>Họ Và Tên</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chọn</td>
+                    <td>
+                        <input type="radio" value="background" name="1">Background
+                        <input type="radio" value="color" name="1">Font
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chọn màu</td>
+                    <td>
+                        <select name="" id="chonmau">
+                            <optgroup>
+                                <option value="chọn màu">
+                                    chọn màu
+                                </option>
+                                <option value="red">red</option>
+                                <option value="white">white</option>
+                                <option value="black">black</option>
+                                <option value="blue">blue</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="doimau()">
+                            Đổi màu
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button">
+                            Cancel
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+    <center>
+        <p id="doitao">Nguyễn Thành Trung 22696701 mif nef</p>
+    </center>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2c</title>
+    <script src="../js/bai2c.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        #container{
+            width: 400px;
+            height: 300px;
+            border: 1px dotted red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td><h5>chọn loại cà phê:</h5></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="caphe" name="caphe" value="Trung Nguyên" events_name="func_events()">Trung Nguyên
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="caphe" name="caphe" value="Me Kong">Me Kong
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="caphe" name="caphe" value="New life">New life
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="caphe" name="caphe" value="Ocean Blue">Ocean Blue
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="caphe" name="caphe" value="Blue Space">Blue Space
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="caphe" name="caphe" value="Windows">Windows
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="choncafe()">Chọn</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Bạn chọn cafe <p id="kqchon" style="display: inline; color:red;"></p></h5>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+</body>
+</html>
